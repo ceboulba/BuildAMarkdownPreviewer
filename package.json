@@ -1,20 +1,28 @@
 {
   "name": "BuildAMarkdownPreviewer",
   "version": "1.0.0",
-  "description": "",
+  "description": "BuildAMarkdownPreviewer for free code camp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ceboulba/BuildAMarkdownPreviewer.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Archipicture",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ceboulba/BuildAMarkdownPreviewer/issues"
   },
-  "homepage": "https://github.com/ceboulba/BuildAMarkdownPreviewer#readme"
+  "homepage": "https://github.com/ceboulba/BuildAMarkdownPreviewer#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  },
+  "dependencies": {
+    "bulma": "^0.7.4"
+  }
 }
