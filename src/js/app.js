@@ -3,6 +3,10 @@ import marked from 'marked'
   const editor = document.getElementById('editor')
   let preview = document.getElementById('preview')
   let previewContent = ''
+  marked.setOptions({
+    gfm: true,
+    breaks: true
+  })
   const defaultText = `
   # Welcome to my React Markdown Previewer! 
   ## This is a sub-heading...
