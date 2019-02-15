@@ -1648,13 +1648,12 @@ var _marked = _interopRequireDefault(require("marked"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (function () {
-  var init = "\n  # h1\n  ## h2\n  ### h3\n  * puce\n  1. ol  \n  texte  \n\n  [link](https://www.archipicture.fr)  \n\n  (https://www.archipicture.fr)";
   var editor = document.getElementById('editor');
   var preview = document.getElementById('preview');
-  var editorContent = init;
   var previewContent = '';
-  editor.innerHTML = editorContent; //preview.innerHTML = editorContent
-
+  var defaultText = "\n  # Welcome to my React Markdown Previewer! \n  ## This is a sub-heading...\n  ### And here's some other cool stuff:\n  \n  Heres some code, `<div></div>`, between 2 backticks.\n\n  ```\n  // this is multi-line code:\n  \n  function anotherExample(firstLine, lastLine) {\n  if (firstLine == '```' && lastLine == '```') {\n    return multiLineCode;\n  }\n}\n```\n\nYou can also make text **bold**... whoa!\nOr _italic_.\nOr... wait for it... **_both!_**\nAnd feel free to go crazy ~~crossing stuff out~~.\n\nThere's also [links](https://www.freecodecamp.com), and\n> Block Quotes!\n\nAnd if you want to get really crazy, even tables:\n\nWild Header | Crazy Header | Another Header?\n------------ | ------------- | ------------- \nYour content can | be here, and it | can be here....\nAnd here. | Okay. | I think we get it.\n\n- And of course there are lists.\n- Some are bulleted.\n- With different indentation levels.\n- That look like this.\n\n\n1. And there are numbererd lists too.\n1. Use just 1s if you want! \n1. But the list goes on...\n- Even if you use dashes or asterisks.\n* And last but not least, let's not forget embedded images:\n\n![React Logo w/ Text](https://goo.gl/Umyytc) \n";
+  var editorContent = defaultText;
+  editor.innerHTML = editorContent;
   editor.addEventListener('keyup', function (event) {
     console.log(event.target.value);
     var input = event.target.value;
@@ -1669,7 +1668,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     console.log(el);
   }
 
-  affiche(init);
+  affiche(defaultText);
 })();
 },{"marked":"node_modules/marked/lib/marked.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1698,7 +1697,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53814" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61739" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
